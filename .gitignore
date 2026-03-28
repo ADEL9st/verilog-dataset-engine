@@ -1,0 +1,23 @@
+# --- Özel ve Hassas Veriler ---
+.env
+secret_settings.json
+
+# --- Üretilen Veri Seti (Senin madenin burada!) ---
+verilog_dataset/
+final_dataset_tr.jsonl
+islenen_dosyalar.txt
+indirme_gecmisi.txt
+
+# --- Python ve Sistem Dosyaları ---
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+.vscode/
+.idea/
+
+# --- Simülasyon Çöpleri ---
+*.vvp
+*.vcd
+sim.out
