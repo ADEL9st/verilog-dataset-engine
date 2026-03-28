@@ -1,7 +1,5 @@
 # 🚀 Veri Motoru 10: Verilog Dataset Engine
 
-İlk olarak pythonda pratikte iyi olmadığımdan kodun bir çok kısmı ai tarafından oluşturulmuştur bu benim 10. prototipim ve bundan sonra yaptıklarımı buraya kaydedicem
-
 Bu proje, Verilog donanım tanımlama dili (HDL) için yüksek kaliteli ve doğrulanmış sentetik veri setleri oluşturmak amacıyla geliştirilmiş bir otomasyon motorudur. **Gemini 3 Flash** modelinin gücünü, **Icarus Verilog** simülasyon araçlarıyla birleştirerek "kendi kendini düzelten" bir veri üretim döngüsü sunar.
 
 ## 🛠️ Temel Özellikler
