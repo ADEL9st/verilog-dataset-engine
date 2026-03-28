@@ -22,7 +22,7 @@ SAVE_DIR = "verilog_dataset"
 OUTPUT_FILE = "final_dataset_tr.jsonl"
 PROCESSED_LOG = "islenen_dosyalar.txt"
 
-# TODO: İleride Github'dan doğrudan dosya çeken bir kazıma (scraping) aşaması eklenirse burası kullanılacak
+# ADEL9st: İleride Github'dan doğrudan dosya çeken bir kazıma (scraping) aşaması eklenirse burası kullanılacak
 DOWNLOADED_HASHES = "indirme_gecmisi.txt" 
 
 os.makedirs(SAVE_DIR, exist_ok=True)
