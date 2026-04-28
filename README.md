@@ -37,7 +37,7 @@ download_verilog()
 ### 2. Hazır Dataset ile Çalışma
 Elinde `.v` dosyaları varsa `verilog_dataset/` klasörüne at ve direkt çalıştır:
 ```bash
-python veri_motoru10.py
+python dataset_engine.py
 ```
 
 ### 3. Çıktı Formatı
