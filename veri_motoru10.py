@@ -40,7 +40,7 @@ auth = Auth.Token(GITHUB_TOKEN) # Github tarafı şu an aktif değil ama dursun(
 g = Github(auth=auth)
 
 gemini_client = genai.Client(api_key=GEMINI_API_KEY)
-GEMINI_MODEL = 'gemini-2.5-flash-lite' # gemini.py den istediğini değiştirebilirsin
+GEMINI_MODEL = '' # gemini.py den istediğini değiştirebilirsin
 
 
 # --- Yardımcı Fonksiyonlar ---
