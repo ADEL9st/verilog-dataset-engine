@@ -24,7 +24,10 @@ This project is an automation engine developed to generate high-quality, verifie
 1. Install Icarus Verilog: `sudo apt install iverilog` (Ubuntu/Debian)
 2. Install dependencies: `pip install -r requirements.txt`
 3. Set your environment variables: `GITHUB_TOKEN` and `GEMINI_API_KEY`.
-
+4. Copy `.env.example` to `.env` and fill in your API keys:
+```
+   cp .env.example .env
+```
 
 ## 🚀 Kullanım
 
