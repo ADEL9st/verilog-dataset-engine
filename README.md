@@ -50,4 +50,4 @@ python veri_motoru10.py
 Icarus simülasyonundan geçen modüller `dogrulanmis/` klasörüne kopyalanır.
 
 ### 5. gemini.py
-Model adını veya parametreleri değiştirmek istersen `gemini.py` dosyasını düzenle.
+Model adını veya parametreleri değiştirmek istersen `gemini.py` dosyasından bakıp değiştirebilirsin.
