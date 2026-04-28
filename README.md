@@ -26,7 +26,7 @@ This project is an automation engine developed to generate high-quality, verifie
 3. Set your environment variables: `GITHUB_TOKEN` and `GEMINI_API_KEY`.
 
 
-## 🚀 Usage / Kullanım
+## 🚀 Kullanım
 
 ### 1. GitHub'dan Verilog Dosyası İndirme
 `dataset_engine.py` içindeki `download_verilog()` satırının başındaki `#` işaretini kaldır:
@@ -63,3 +63,37 @@ Model adını veya parametreleri değiştirmek istersen `gemini.py` dosyasından
 - `time.sleep(1)` → API rate limit gecikmesi
 - `3072 < len(code) < 600000` → İşlenecek dosya boyut aralığı (byte)
 - `files_to_process[başlangıç:bitiş]` → Belirli bir dosya aralığı işlemek için
+
+
+## 🚀 Usage
+
+1. **Download Verilog files from GitHub**
+   Remove the `#` from the `download_verilog()` line in `dataset_engine.py`
+
+2. **Work with existing dataset**
+   Place `.v` files in `verilog_dataset/` folder and run:
+```bash
+python dataset_engine.py
+```
+
+3. **Output format**
+   Each line in `final_dataset_tr.jsonl` is a JSON object:
+```json
+   {"file": "alu.v", "instruction": "...", "input": "", "output": "module alu ..."}
+```
+
+4. **Verified files**
+   Modules that pass Icarus simulation are copied to `dogrulanmis/`
+
+5. **gemini.py**
+   Edit `gemini.py` to change the model name or parameters.
+
+6. **Prompts**
+   Modify prompts in the `--- Gemini Promptları ---` section of `dataset_engine.py`
+
+7. **Settings**
+   Adjust these values in `dataset_engine.py`:
+   - `worker_count = 10` → Number of parallel workers
+   - `time.sleep(1)` → API rate limit delay
+   - `3072 < len(code) < 600000` → File size range (bytes)
+   - `files_to_process[start:end]` → Process a specific file range
