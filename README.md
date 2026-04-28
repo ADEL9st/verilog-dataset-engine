@@ -1,4 +1,4 @@
-# 🚀 Veri Motoru 10: Verilog Dataset Engine
+# 🚀 Dataset_Engine: Verilog Dataset Engine
 
 Bu proje, Verilog donanım tanımlama dili (HDL) için yüksek kaliteli ve doğrulanmış sentetik veri setleri oluşturmak amacıyla geliştirilmiş bir otomasyon motorudur. **Gemini** modelinin gücünü, **Icarus Verilog** simülasyon araçlarıyla birleştirerek "kendi kendini düzelten" bir veri üretim döngüsü sunar.
 
@@ -10,7 +10,7 @@ Bu proje, Verilog donanım tanımlama dili (HDL) için yüksek kaliteli ve doğr
 
 ---
 
-# 🚀 Veri Motoru 10: Verilog Dataset Engine (English)
+# 🚀 Dataset_Engine: Verilog Dataset Engine (English)
 
 This project is an automation engine developed to generate high-quality, verified synthetic datasets for the Verilog Hardware Description Language (HDL). By combining the capabilities of the **Gemini** model with **Icarus Verilog** simulation tools, it provides a "self-correcting" data generation loop.
 
