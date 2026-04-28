@@ -51,3 +51,6 @@ Icarus simülasyonundan geçen modüller `dogrulanmis/` klasörüne kopyalanır.
 
 ### 5. gemini.py
 Model adını veya parametreleri değiştirmek istersen `gemini.py` dosyasından bakıp değiştirebilirsin.
+
+### 6. Prompt
+dataset_engine.py dosyasının içinde --- Gemini Promptları --- kısmında promptu istediğiniz gibi değiştirin.
