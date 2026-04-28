@@ -24,3 +24,30 @@ This project is an automation engine developed to generate high-quality, verifie
 1. Install Icarus Verilog: `sudo apt install iverilog` (Ubuntu/Debian)
 2. Install dependencies: `pip install -r requirements.txt`
 3. Set your environment variables: `GITHUB_TOKEN` and `GEMINI_API_KEY`.
+
+
+## 🚀 Usage / Kullanım
+
+### 1. GitHub'dan Verilog Dosyası İndirme
+`veri_motoru10.py` içindeki `download_verilog()` satırının başındaki `#` işaretini kaldır:
+```python
+download_verilog()
+```
+
+### 2. Hazır Dataset ile Çalışma
+Elinde `.v` dosyaları varsa `verilog_dataset/` klasörüne at ve direkt çalıştır:
+```bash
+python veri_motoru10.py
+```
+
+### 3. Çıktı Formatı
+`final_dataset_tr.jsonl` dosyasında her satır bir JSON objesidir:
+```json
+{"file": "alu.v", "instruction": "...", "input": "", "output": "module alu ..."}
+```
+
+### 4. Doğrulanmış Dosyalar
+Icarus simülasyonundan geçen modüller `dogrulanmis/` klasörüne kopyalanır.
+
+### 5. gemini.py
+Model adını veya parametreleri değiştirmek istersen `gemini.py` dosyasını düzenle.
