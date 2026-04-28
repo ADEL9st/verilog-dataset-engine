@@ -53,4 +53,13 @@ Icarus simülasyonundan geçen modüller `dogrulanmis/` klasörüne kopyalanır.
 Model adını veya parametreleri değiştirmek istersen `gemini.py` dosyasından bakıp değiştirebilirsin.
 
 ### 6. Prompt
-dataset_engine.py dosyasının içinde --- Gemini Promptları --- kısmında promptu istediğiniz gibi değiştirin.
+`dataset_engine.py` dosyasının içinde --- Gemini Promptları --- kısmında promptu istediğiniz gibi değiştirin.
+
+## 7. Ayarlar
+
+`dataset_engine.py` içindeki şu değerleri ihtiyacına göre değiştirebilirsin:
+
+- `worker_count = 10` → Paralel işçi sayısı (CPU'na göre ayarla)
+- `time.sleep(1)` → API rate limit gecikmesi
+- `3072 < len(code) < 600000` → İşlenecek dosya boyut aralığı (byte)
+- `files_to_process[başlangıç:bitiş]` → Belirli bir dosya aralığı işlemek için
