@@ -29,7 +29,7 @@ This project is an automation engine developed to generate high-quality, verifie
 ## 🚀 Usage / Kullanım
 
 ### 1. GitHub'dan Verilog Dosyası İndirme
-`veri_motoru10.py` içindeki `download_verilog()` satırının başındaki `#` işaretini kaldır:
+`dataset_engine.py` içindeki `download_verilog()` satırının başındaki `#` işaretini kaldır:
 ```python
 download_verilog()
 ```
